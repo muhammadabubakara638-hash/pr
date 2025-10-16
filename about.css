@@ -1,0 +1,52 @@
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width:480px) {
+  .stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* optional: center horizontally */
+}
+
+}
+
+.s1 {
+  text-align: center;
+}
+
+.a1 {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(90deg, orange, pink, orange); /* 🔥 gradient added */
+  background-size: 200% 200%;
+  animation: gradientMove 3s ease infinite;
+  -webkit-background-clip: text; 
+  /* -webkit-text-fill-color: transparent; url(../../../../PROJECT WEBSITE/project2 website/img1.jpg) */
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.p2 {
+  color: #bbb;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.a1 {
+  /* background: linear-gradient(90deg, orange, pink, orange); */
+  background-size: 200% 200%;
+  animation: gradientMove 3s ease infinite;
+  color: wheat;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
